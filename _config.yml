@@ -1,6 +1,5 @@
 name: University at Buffalo Data Science Research Group
-url: http://www.cse.buffalo.edu/mlds
-
+baseurl: /ubds
 exclude: [bibble, README.md, Makefile, screenshot.png]
 
 # colorize code snippets with the pygments module
@@ -19,7 +18,7 @@ roles:
 front_page_news: 16 
 
 # Base pathname for links.
-base: ''
+base: '/ubds'
 
 # Navigation bar links.
 navigation:
