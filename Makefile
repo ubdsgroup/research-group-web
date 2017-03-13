@@ -1,4 +1,4 @@
-PYTHON=python2.7
+PYTHON=python
 
 # targets that aren't filenames
 .PHONY: all clean deploy
@@ -6,7 +6,7 @@ PYTHON=python2.7
 all: _includes/pubs.html _site/index.html
 
 BUILDARGS :=
-_site/index.html _site/wacas14/index.html:
+_site/index.html: 
 	jekyll build $(BUILDARGS)
 
 _includes/pubs.html: bib/pubs.bib bib/publications.tmpl

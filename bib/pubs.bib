@@ -1,7 +1,65 @@
-@InProceedings{XXX,
-  author = 	 {Author 1 and Author 2},
-  title = 	 {Awesome Publication},
-  booktitle =    {International Conference on Awesome Research},
-  year = 	 2014,
-  month = 5
+@inproceedings{Schoeneman2017,
+  author = {Schoeneman, F. and Mahapatra, S. and Chandola, V. and
+    Napp, N. and Zola, J.},
+  title = {Error Metrics for Learning Reliable Manifolds from Streaming Data},
+  booktitle = {Proceedings of SIAM Data Mining Conference},
+  year = {2017},
+  month =  {April},
+  url = {https://arxiv.org/abs/1611.04067},
+  abstract = {Spectral dimensionality reduction is frequently used to identify low-dimensional structure in high-dimensional data. However, learning manifolds, especially from the streaming data, is computationally and memory expensive. In this paper, we argue that a stable manifold can be learned using only a fraction of the stream, and the remaining stream can be mapped to the manifold in a significantly less costly manner. Identifying the transition point at which the manifold is stable is the key step. We present error metrics that allow us to identify the transition point for a given stream by quantitatively assessing the quality of a manifold learned using Isomap. We further propose an efficient mapping algorithm, called S-Isomap, that can be used to map new samples onto the stable manifold. We describe experiments on a variety of data sets that show that the proposed approach is computationally efficient without sacrificing accuracy.},
 }
+@InProceedings{Mahapatra2015,
+  Title                    = {Modeling Graphs Using a Mixture of Kronecker Models},
+  Author                   = {Suchismit Mahapatra and Varun Chandola},
+  Booktitle                = {IEEE International Conference on Big Data},
+  Year                     = {2015},
+  Month                    = {Nov},
+  abstract		   = {Generative models for graphs are increasingly becoming a popular tool for researchers to generate realistic approximations of graphs. While in the past, focus was on generating graphs which follow general laws, such as the power law for degree distribution, current models have the ability to learn from observed graphs and generate synthetic approximations. The primary emphasis of existing models has been to closely match different properties of a single observed graph. Such models, though stochastic, tend to generate samples which do not have significant variance in terms of the various graph properties. We argue that in many cases real graphs are sampled drawn from a graph population (e.g., networks sampled at various time points, social networks for individual schools, healthcare networks for different geographic regions, etc.). Such populations typically exhibit significant variance. However, existing models are not designed to model this variance, which could lead to issues such as overfitting. We propose a graph generative model that focuses on matching the properties of real graphs and the natural variance expected for the corresponding population. The proposed model adopts a mixture-model strategy to expand the expressiveness of Kronecker product based graph models (KPGM), while building upon the two strengths of KPGM, viz., ability to model several key properties of graphs and to scale to massive graph sizes using its elegant fractal growth based formulation. The proposed model, called x-Kronecker Product Graph Model, or xKPGM, allows scalable learning from observed graphs and generates samples that match the mean and variance of several salient graph properties. We experimentally demonstrate the capability of the proposed model to capture the inherent variability in real world graphs on a variety of publicly available graph data sets.},
+  url			  = {https://www.computer.org/csdl/proceedings/big-data/2015/9926/00/07363817.pdf},
+}
+@InProceedings{Jiang2015,
+  author =   {Jialiang Jiang and Jessica Castner and Sharon Hewner and Varun Chandola},
+  title =    {Improving Quality of Care using Data Science Driven Methods},
+  booktitle = {{UNYTE} Scientific Session - Hitting the Accelerator: Health Research Innovation through Data Science },
+  year =      {2015},
+  month = {June},
+}
+@inproceedings{Kul2016,
+  author = {Kul, Gokhan and Luong, Duc and Xie, Ting and Coonan, Patrick and Chandola, Varun and Kennedy, Oliver and Upadhyaya, Shambhu},
+  title = {Ettu: Analyzing Query Intents in Corporate Databases},
+  booktitle = {Proceedings of the 25th International Conference Companion on World Wide Web},
+  year = {2016},
+  pages = {463--466},
+  abstract= {Insider threats to databases in the financial sector have become a very serious and pervasive security problem. This paper proposes a framework to analyze access patterns to databases by clustering SQL queries issued to the database. Our system Ettu works by grouping queries with other similarly structured queries. The small number of intent groups that result can then be efficiently labeled by human operators. We show how our system is designed and how the components of the system work. Our preliminary results show that our system accurately models user intent.},
+  url = {http://dl.acm.org/citation.cfm?id=2888608}
+} 
+
+@InProceedings{Valecha2015,
+  title = {A big data approach to rumor mitigation in Twitter microblog: A case of Boston bombings},
+  booktitle = {WEB: The Thirteenth Workshop on e-Business},
+  author = {R. Valecha and A. Sultania and V. Chandola and M. Agrawal and H. R. Rao.},
+  year = {2015},
+}
+
+@article{Luong2016,
+  author={D. T. A. Luong and D. Tran and V. Chandola and C. Fox and W. Pace and J. Vassalotti and J. Carroll and M. Dickinson and M. Withiam-Leitch and N. Satchindanand and M. Yang and C. Smail},
+  title = {Extracting deep phenotypes for chronic kidney disease using electronic health records},
+  journal = {eGems - Generating Evidence \& Methods to Improve Patient Outcomes (To Appear)}, 
+  year = {2017},
+}
+@Inproceedings{Yang2015,
+author="Yang, Zhi
+and Chandola, Varun",
+editor="Nalpantidis, Lazaros
+and Kr{\"u}ger, Volker
+and Eklundh, Jan-Olof
+and Gasteratos, Antonios",
+title="Surface Reconstruction from Intensity Image Using Illumination Model Based Morphable Modeling",
+booktitle="Computer Vision Systems: 10th International Conference, ICVS 2015, Copenhagen, Denmark, July 6-9, 2015, Proceedings",
+year="2015",
+publisher="Springer International Publishing",
+pages="117--127",
+abstract="We present a new method for reconstructing depth of a known object from a single still image using deformed underneath sign matrix of a similar object. Existing Shape from Shading(SFS) methods try to establish a relationship between intensity values of a still image and surface normal of corresponding depth, but most of them resort to error minimization based approaches. Given the fact that these reconstruction approaches are fundamentally ill-posed, they have limited successes for surfaces like a human face. Photometric Stereo (PS) or Structure from Motion (SfM) based methods extend SFS by adding additional information/constraints about the target. Our goal is identical to SFS, however, we tackle the problem by building a relationship between gradient of depth and intensity value at the corresponding location of image of the same object. This formula is simplified and approximated for handing different materials, lighting conditions and, the underneath sign matrix is also obtained by resizing/deforming Region of Interest(ROI) with respect to its counterpart of a similar object. The target object is then reconstructed from its still image. In addition to the process, delicate details of the surface is also rebuilt using a Gabor Wavelet Network(GWN) on different ROIs. Finally, for merging the patches together, a Self-Organizing Maps(SOM) based method is used to retrieve and smooth boundary parts of ROIs. Compared with state of art SFS based methods, the proposed method yields promising results on both widely used benchmark datasets and images in the wild.",
+url="http://dx.doi.org/10.1007/978-3-319-20904-3_11"
+}
+

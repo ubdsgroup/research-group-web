@@ -6,50 +6,48 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="{{ site.base }}/css/bootstrap.min.css" rel="stylesheet">
         <link href="{{ site.base }}/css/group.css" rel="stylesheet">
-        <link rel="alternate" type="application/atom+xml" title="Atom"
-            href="{{ site.base }}/blog/blog.xml">
     </head>
     <body>
-        <div class="container">
-          <div class="header">
-            <ul class="nav nav-pills pull-right">
-              {% assign shorturl = page.url | replace:'index.html','' %}
-              {% for item in site.navigation %}
-                <li {% if item.link == shorturl %}class="active"{% endif %}>
-                  <a href="{{ site.base }}{{ item.link }}">
-                    {{ item.title }}
-                  </a>
-                </li>
-              {% endfor %}
-            </ul>
-            <a href="{{ site.base }}/">
-                <img src="{{ site.base }}/img/logo.png"
-                    srcset="{{ site.base }}/img/logo@2x.png 2x"
-                    alt="Awesome" id="logo">
-            </a>
-          </div>
+      <div class="container">
+	<div class="header">
+	  <ul class="nav nav-pills pull-right">
+	    {% for item in site.navigation %}
+	    <li {% if item.tag == page.url %}class="active"{% endif %}>
+	      <a href="{{ site.base }}{{ item.link }}">
+		{{ item.title }}
+	      </a>
+	    </li>
+	    {% endfor %}
+	  </ul>
+	  <a href="{{ site.base }}/">
+	    <img src="{{ site.base }}/img/logo.png"
+	  srcset="{{ site.base }}/img/logo@2x.png 2x"
+   alt="UBDS" id="logo">
+	  </a>
+	</div>
 
-          {% comment %}Liquid is sort of terrible! I think "!= true" is the
-          only way to do negation?{% endcomment %}
-          {% if page.notitle != true %}
-          <h2>{{ page.title }}</h2>
-          {% endif %}
+	{% comment %}Liquid is sort of terrible! I think "!= true" is the
+	only way to do negation?{% endcomment %}
+	{% if page.notitle != true %}
+	<h2>{{ page.title }}</h2>
+	{% endif %}
 
-          {{ content }}
+	{{ content }}
 
-          <div class="footer">
-            <p>
-              <a href="http://dept.example.edu/">Illustrious Department</a>
-              at the
-              <a href="http://example.edu/">University of
-                Example</a>
-            </p>
-          </div>
+	<div class="footer">
+	  <p>
+	  <a href="https://www.cse.buffalo.edu/">Computer Science and Engineering</a>
+	  at the
+	  <a href="https://www.buffalo.edu/">University at Buffalo</a>
+	  </p>
+	</div>
 
-        </div> <!-- /container -->
+      </div> <!-- /container -->
 
-        <!-- Support retina images. -->
-        <script type="text/javascript"
-            src="{{ site.base }}/js/srcset-polyfill.js"></script>
+      <!-- Support retina images. -->
+      <script type="text/javascript"
+	      src="{{ site.base }}/js/srcset-polyfill.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </body>
 </html>

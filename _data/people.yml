@@ -1,29 +1,69 @@
-profx:
-    display_name: "Professor X"
-    webpage: "http://en.wikipedia.org/wiki/Professor_X"
-    github: profx
+chandola:
+    display_name: "Varun Chandola"
+    avatar: "img/chandola.png"
+    webpage: "https://www.cse.buffalo.edu/~chandola"
+    github: chandola
     role: faculty
     bio: |
-        Professor X is the leader and founder of X-Men. 
-melody:
-    display_name: "Scott Summers"
-    webpage: "http://en.wikipedia.org/wiki/Cyclops_(comics)"
-    role: staff
-    bio: |
-        Scott, also known as Cyclops, shoots lasers from his eyes, which makes him the perfect administrative assistant.
+      Varun Chandola is a tenure-track Assistant Professor at <a href="http://www.buffalo.edu">University at Buffalo (SUNY)</a> in the <a href="http://www.cse.buffalo.edu">Computer Science Department</a> and the <a href="http://cdse.buffalo.edu/">Center for Computational and Data-Enabled Science and Engineering</a> (CDSE). His research covers the application of data mining and machine learning to problems involving big and complex data, focusing on anomaly detection ­finding surprising patterns, connections, associations, and trends in data. Before joining UB, he was a scientist in the <a href="http://computing.ornl.gov/cse/">Computational Sciences and Engineering Division</a> at the <a href="http://www.ornl.gov">Oak Ridge National Laboratory</a>. 
 
-wolverine:
-    display_name: "Wolverine"
-    webpage: "http://en.wikipedia.org/wiki/Wolverine_%28comics%29"
-    github: wolverine
-    role: postdoc
-
-storm:
-    display_name: "Storm"
-    webpage: "http://en.wikipedia.org/wiki/Storm_%28Marvel_Comics%29"
+suchismit:
+    display_name: "Suchismit Mahapatra"
+    avatar: "img/suchismit.jpg"
+    webpage: "https://www.cse.buffalo.edu/mlds"
     role: grad
+    bio: |
+       Suchismit works on manifold embedding.
 
-jean:
-    display_name: "Jean Grey"
+duc:
+    display_name: "Duc Luong"
+    webpage: "https://www.cse.buffalo.edu/mlds"
+    avatar: "img/ducthanh.jpg"
+    role: grad 
+    bio: |
+      Duc works on non-parametric Bayesian clustering methods.
+
+jialiang:
+    display_name: "Jialiang Jiang"
+    webpage: "https://www.cse.buffalo.edu/mlds"
+    avatar: "img/jialiang.png"
+    role: grad 
+    bio: |
+      Jialiang works on learning with structured sparsity.
+
+niyazi:
+    display_name: "Niyazi Sorkunlu"
+    webpage: "https://www.cse.buffalo.edu/mlds"
+    avatar: "img/niyaziso.jpg"
+    role: grad 
+    bio: |
+      Niyazi works on tensor decomposition based anomaly detection methods.
+
+arshad:
+    display_name: "Arshad Zaidi"
+    webpage: "https://www.cse.buffalo.edu/mlds"
+    avatar: "img/arshad.jpg"
+    role: grad 
+    bio: |
+      Arshad works on integrating heterogeneous urban data.
+
+yanbo:
+    display_name: "Yanbo Guo"
+    webpage: "https://www.cse.buffalo.edu/mlds"
+    avatar: "img/yanboguo.png"
+    role: grad 
+    bio: |
+      Yanbo works on understanding flow of information in social networks.
+
+deen:
+    display_name: "Deen Dayal Mohan"
+    webpage: "https://www.cse.buffalo.edu/mlds"
+    avatar: "img/unknown.jpg"
+    role: gradms 
+    bio: |
+     Deen works on tensor decomposition based anomaly detection methods.
+    
+zhi:
+    display_name: "Zhi Yang"
     role: alum
-    bio: "Ph.D., 2013. Now at Microsoft Research."
+    bio: "Ph.D., 2015. Now at Continental Vision (U.K.)."

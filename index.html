@@ -5,8 +5,7 @@ notitle: true
 ---
 <div class="jumbotron">
   <p>
-    The <b>Awesome Research Group</b> at <b>Example U</b> does all sorts of
-    research. Here is a place where we tell you exactly what that is!
+  The <b>University at Buffalo Data Science</b> (UBDS) research group is located in the <a href="http://www.cse.buffalo.edu">Computer Science and Engineering</a> department at the <a href="http://www.buffalo.edu">University at Buffalo</a>. We develop machine learning based data science solutions for problems in a wide variety of domains, including cyber-security, threat detection, healthcare, and sustainability.
   </p>
 </div>
 
@@ -18,15 +17,6 @@ notitle: true
             <span class="date">{{ post.date | date_to_long_string }}</span>
             {{ post.content }}
         </li>
-    {% else %}
-        <li class="bloglink">
-            <span class="date">{{ post.date | date_to_long_string }}</span>
-            <a href="{{ post.url }}">&raquo; {{ post.title }}</a>
-        </li>
     {% endif %}
 {% endfor %}
 </ul>
-{% assign numposts = site.posts | size %}
-{% if numposts >= site.front_page_news %}
-<p><a href="{{ site.base }}/blog/">Older posts&hellip;</a></p>
-{% endif %}
