@@ -8,15 +8,99 @@ notitle: true
   The <b>University at Buffalo Data Science</b> (UBDS) research group is located in the <a href="http://www.cse.buffalo.edu">Computer Science and Engineering</a> department at the <a href="http://www.buffalo.edu">University at Buffalo</a>. We develop machine learning based data science solutions for problems in a wide variety of domains, including cyber-security, threat detection, healthcare, and sustainability.
   </p>
 </div>
+<div id="highlights" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#highlights" data-slide-to="0" class="active"></li>
+    <li data-target="#highlights" data-slide-to="1"></li>
+    <li data-target="#highlights" data-slide-to="2"></li>
+    <li data-target="#highlights" data-slide-to="3"></li>
+    <li data-target="#highlights" data-slide-to="4"></li>
+    <li data-target="#highlights" data-slide-to="5"></li>
+    <li data-target="#highlights" data-slide-to="6"></li>
+    <li data-target="#highlights" data-slide-to="7"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="img/icd9.png" alt="ICD9">
+	<div class="carousel-caption">
+	  <span style="color:black;">How does one handle structure while learning from data in which the features are part of a well-defined hierarchy, such as ICD9 codes. We are developing methods that can incorporate structured sparsity in classification models.</span>
+	  <!--a class="btn btn-large btn-primary" href="#">Learn more</a-->
+	</div>
+    </div>
+
+    <div class="item">
+      <img src="img/iglobecloud.png" alt="WebGlobe">
+	<div class="carousel-caption">
+	  <span style="color:black;">
+	     The webGlobe project is a unified framework that allows integration of disparate geospatial data sources that include remotely sensed observation data, climate model outputs, population and critical infrastructure data, and provide an interface for both client visual analytics and the sever-side data mining capabilities. webGlobe runs on all major operating systems, desktop and mobile devices, and web browsers. 
+	  </span>
+	  <!--a class="btn btn-large btn-primary" href="#">Learn more</a-->
+	</div>
+    </div>
+
+    <div class="item">
+      <img src="img/subtypes.png" alt="CKD Subtypes">
+	<div class="carousel-caption">
+	  <span style="color:black;">Precision medicine demands identification of precise phenotypes, also referred to as deep phenotyping. In this research we are focusing on extracting deep phenotypes from clinical data for patients suffering from Chronic Kidney Disease (CKD).</span>
+	  <!--a class="btn btn-large btn-primary" href="#">Learn more</a-->
+	</div>
+    </div>
+
+    <div class="item">
+      <img src="img/healthcarecosts.png" alt="Healthcare Costs">
+	<div class="carousel-caption">
+	  <span style="color:black;">Rising healthcare costs are one of the primary challenges faced by modern society. High rates of readmissions in hospitals is one of the key drivers of these costs. We are developing ways to use health insurance claims data to build predictors for readmissions.</span>
+	  <!--a class="btn btn-large btn-primary" href="#">Learn more</a-->
+	</div>
+    </div>
+    <div class="item">
+      <img src="img/biomass.png" alt="Biomass Monitoring">
+	<div class="carousel-caption">
+	  <span style="color:black;">Gaussian process regression (GPR) based models, also known as Kriging in geostatistics, have been widely used in the area of geostatistics. Our research focuses on scaling GPR models for applications such as biomass monitoring and uncertainty quantification in large scale scientific simulations.</span>
+	  <!--a class="btn btn-large btn-primary" href="#">Learn more</a-->
+	</div>
+    </div>
+    <div class="item">
+      <img src="img/rumorgraph.png" alt="Twitter Rumors">
+	<div class="carousel-caption">
+	  <span style="color:black;">
+	    One prominent threat action (attack vector) in social cyber-attacks is the use of rumors. We are developing methods that integrate social science and computer science methods and new analysis techniques to process large-scale tweet data for detection and alerting of rumors. 
+	  </span>
+	  <!--a class="btn btn-large btn-primary" href="#">Learn more</a-->
+	</div>
+    </div>
+    <div class="item">
+      <img src="img/insiderthreat.png" alt="Insider Threat">
+	<div class="carousel-caption">
+	  <span style="color:black;">One of the greatest threats to a the security of a database system comes from within: Users who have been granted access to data using it in a malicious or illegitimate way. Our goal is to develop new types of statistical signatures for a user or role's behavior as they access a database. Using these signatures, we can identify non-standard behvaior that could be evidence of malicious activity.
+	  </span>
+	  <!--a class="btn btn-large btn-primary" href="#">Learn more</a-->
+	</div>
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#highlights" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#highlights" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
 
 <h2>News</h2>
 <ul class="news list-unstyled">
-{% for post in site.posts limit: site.front_page_news %}
-    {% if post.shortnews %}
-        <li class="shortnews">
-            <span class="date">{{ post.date | date_to_long_string }}</span>
-            {{ post.content }}
-        </li>
-    {% endif %}
-{% endfor %}
+  {% for post in site.posts limit: site.front_page_news %}
+  {% if post.shortnews %}
+  <li class="shortnews">
+    <span class="date">{{ post.date | date_to_long_string }}</span>
+    {{ post.content }}
+  </li>
+  {% endif %}
+  {% endfor %}
 </ul>
