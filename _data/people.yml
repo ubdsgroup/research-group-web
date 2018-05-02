@@ -10,11 +10,11 @@ chandola:
 suchismit:
     display_name: "Suchismit Mahapatra"
     avatar: "img/suchismit.jpg"
-    webpage: "https://www.cse.buffalo.edu/mlds"
+    webpage: "https://www.buffalo.edu/~suchismi"
+    github: schrilax
     role: grad
     bio: |
-       Suchismit works on manifold embedding.
-
+       I am currently a PhD student with the <a href="http://www.cse.buffalo.edu/ubds/"> Machine Learning and Data Science Research (MLDS)</a> group at the <a href="http://www.buffalo.edu">University of Buffalo, SUNY (UB)</a>, working under <a href="http://www.cse.buffalo.edu/~chandola">Varun Chandola</a>. I completed my Masters at <a href="http://www.buffalo.edu">UB</a> as well with a perfect GPA. Broadly, my area of research is in large scale machine learning and data mining. Specifically my research focuses on designing, analyzing and implementing novel machine learning algorithms that take advantage of modern hardware to enable learning and mining of massive graphs and data sets.
 duc:
     display_name: "Duc Luong"
     webpage: "https://www.cse.buffalo.edu/mlds"
