@@ -1,3 +1,12 @@
+@InProceedings{Mahapatra2017,
+  Title                    = {S-Isomap++: Multi Manifold Learning from Streaming Data},
+  Author                   = {Suchismit Mahapatra and Varun Chandola},
+  Booktitle                = {IEEE International Conference on Big Data},
+  Year                     = {2017},
+  Month                    = {Dec},
+  abstract       = {Manifold learning based methods have been widely used for non-linear dimensionality reduction (NLDR). However, in many practical settings, the need to process streaming data is a challenge for such methods, owing to the high computational complexity involved. Moreover, most methods operate under the assumption that the input data is sampled from a single manifold, embedded in a high dimensional space. We propose a method for streaming NLDR when the observed data is either sampled from multiple manifolds or irregularly sampled from a single manifold. We show that existing NLDR methods, such as Isomap, fail in such situations, primarily because they rely on smoothness and continuity of the underlying manifold, which is violated in the scenarios explored in this paper. However, the proposed algorithm is able to learn effectively in presence of multiple, and potentially intersecting, manifolds, while allowing for the input data to arrive as a massive stream.},
+  url       = {https://ieeexplore.ieee.org/document/8257987},
+}
 @inproceedings{Schoeneman2017,
   author = {Schoeneman, F. and Mahapatra, S. and Chandola, V. and
     Napp, N. and Zola, J.},
@@ -5,7 +14,7 @@
   booktitle = {Proceedings of SIAM Data Mining Conference},
   year = {2017},
   month =  {April},
-  url = {https://arxiv.org/abs/1611.04067},
+  url = {http://epubs.siam.org/doi/10.1137/1.9781611974973.84},
   abstract = {Spectral dimensionality reduction is frequently used to identify low-dimensional structure in high-dimensional data. However, learning manifolds, especially from the streaming data, is computationally and memory expensive. In this paper, we argue that a stable manifold can be learned using only a fraction of the stream, and the remaining stream can be mapped to the manifold in a significantly less costly manner. Identifying the transition point at which the manifold is stable is the key step. We present error metrics that allow us to identify the transition point for a given stream by quantitatively assessing the quality of a manifold learned using Isomap. We further propose an efficient mapping algorithm, called S-Isomap, that can be used to map new samples onto the stable manifold. We describe experiments on a variety of data sets that show that the proposed approach is computationally efficient without sacrificing accuracy.},
 }
 @InProceedings{Mahapatra2015,
@@ -15,7 +24,7 @@
   Year                     = {2015},
   Month                    = {Nov},
   abstract		   = {Generative models for graphs are increasingly becoming a popular tool for researchers to generate realistic approximations of graphs. While in the past, focus was on generating graphs which follow general laws, such as the power law for degree distribution, current models have the ability to learn from observed graphs and generate synthetic approximations. The primary emphasis of existing models has been to closely match different properties of a single observed graph. Such models, though stochastic, tend to generate samples which do not have significant variance in terms of the various graph properties. We argue that in many cases real graphs are sampled drawn from a graph population (e.g., networks sampled at various time points, social networks for individual schools, healthcare networks for different geographic regions, etc.). Such populations typically exhibit significant variance. However, existing models are not designed to model this variance, which could lead to issues such as overfitting. We propose a graph generative model that focuses on matching the properties of real graphs and the natural variance expected for the corresponding population. The proposed model adopts a mixture-model strategy to expand the expressiveness of Kronecker product based graph models (KPGM), while building upon the two strengths of KPGM, viz., ability to model several key properties of graphs and to scale to massive graph sizes using its elegant fractal growth based formulation. The proposed model, called x-Kronecker Product Graph Model, or xKPGM, allows scalable learning from observed graphs and generates samples that match the mean and variance of several salient graph properties. We experimentally demonstrate the capability of the proposed model to capture the inherent variability in real world graphs on a variety of publicly available graph data sets.},
-  url			  = {https://www.computer.org/csdl/proceedings/big-data/2015/9926/00/07363817.pdf},
+  url			  = {http://ieeexplore.ieee.org/document/7363817},
 }
 @InProceedings{Jiang2015,
   author =   {Jialiang Jiang and Jessica Castner and Sharon Hewner and Varun Chandola},
